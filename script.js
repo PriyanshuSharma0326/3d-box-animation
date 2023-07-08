@@ -1,6 +1,6 @@
 const boxesContainer = document.getElementById('boxes');
 
-const dogifyButton = document.getElementById('dogify');
+const btn = document.getElementById('btn');
 
 const IntegrateBoxes = () => {
     for(let i = 0; i < 4; i++) {
@@ -15,6 +15,6 @@ const IntegrateBoxes = () => {
 
 IntegrateBoxes();
 
-dogifyButton.addEventListener('click', () => {
+btn.addEventListener('click',btn => {
     boxesContainer.classList.toggle('disintegrated');
 });
